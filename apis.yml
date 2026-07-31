@@ -1,7 +1,30 @@
 aid: mount
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mount.png
 name: Mount
-description: Mount is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Mount is a Y Combinator-backed (P26) AI-native insurance carrier built
+  specifically for companies deploying autonomous AI agents in real business
+  processes. Its first product, an AI liability policy marketed as ActiveCover,
+  pairs continuous vulnerability scanning and red-teaming of AI deployments with
+  purpose-built liability coverage across AI-specific risk categories. Mount
+  secures the agent workflow, quantifies the residual operational risk, helps
+  fix vulnerabilities, and transfers the remaining risk through insurance,
+  advertising fast activation and dynamic, usage-based pricing. Founded in 2026
+  by Fabian Amherd and John Bachmann and based in San Francisco, Mount aims to
+  rebuild the commercial-insurance carrier stack from the ground up with AI at
+  its core. As of this profile Mount publishes a marketing site and blog but no
+  public developer, API, or SDK surface.
 url: https://raw.githubusercontent.com/api-evangelist/mount/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,34 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Artificial Intelligence
+- AI Agents
+- AI Safety
+- Risk
+- Security
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/mount-domain-security.yml
+- type: Website
+  url: https://mount.insure/
+- type: Blog
+  url: https://mount.insure/blogs
+- type: X
+  url: https://x.com/mountinsure
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
